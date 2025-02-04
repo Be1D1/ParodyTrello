@@ -1,0 +1,82 @@
+.board-user {
+    font-size: 23px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.h2-board {
+    width: 300px;
+    height: 100px;
+    background-color: #0072f5;
+    box-shadow: 0 0 20px #000;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    transition: box-shadow 0.15s;
+}
+.h2-board h2 {
+    text-shadow: 2px 2px 5px #000;
+}
+.h2-board:hover {
+    box-shadow: 3px 5px 20px #1d0101, inset 0 0 20px #000;
+}
+.but-con-list button {
+    width: 250px;
+    height: 100px;
+    background-color: #e7e5e5;
+    font-size: 23px;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px #000;
+    border-radius: 15px;
+}
+.but-con-list button:hover {
+    background-color: #d4d4d4;
+}
+.modal-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: -5px -5px 20px #a1a1a1, 5px 5px 20px #a1a1a1;
+}
+.modal-content input {
+    width: 220px;
+    height: 40px;
+    border: none;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 10px #686868;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+.modal-content input:hover {
+    background-color: #e6e6e6;
+    transition: background-color 0.3s;
+}
+.modal-overlay svg {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    fill: #ff0000;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.modal-overlay svg:hover {
+    fill: #f87a7a;
+}
+.modal-lists-con{
+    display: flex;
+    gap: 50px;
+}
+.litst-create-con{
+    width: 300px;
+}

@@ -1,0 +1,61 @@
+.board{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.board_but{
+    width: 300px;
+    height: 100px;
+    background-color: #6B8E23;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px #000000;
+    border-radius: 15px;
+}
+.board_but:hover {
+    background-color: #2E8B57;
+    transition: background-color 0.2s;
+    box-shadow: 3px 5px 20px #1d0101;
+    transition: box-shadow 0.15s;
+    font-size: 21px;
+}
+.board_but:hover .plus{
+   fill:#f7e5c4;
+}
+.board_but:active{
+    background-color: #277549;
+}
+.plus{
+    fill: #fff;
+    height: 90px;
+    width: 90px;
+}
+.cross{
+    position: absolute;
+    margin-left: 248px;
+    margin-top: 135px;
+    fill: #ffc04c;
+    height: 30px;
+    width: 30px;
+    animation: svg-anim 2.5s ease;
+}
+@keyframes svg-anim {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+.cross:hover{
+    fill: #ffa600;
+    height: 35px;
+    width: 35px;
+}
+.content-board{
+    display: flex; 
+    flex-direction: column;
+}

@@ -1,0 +1,46 @@
+.board-item {
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    background-color: #da8383;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #ffffff,
+        -2px -2px 10px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board-item:hover {
+    background-color: #eebfbf;
+    width: 250px;
+    height: 65px;
+    box-shadow: 2px 2px 10px #ec5e5e,
+        -2px -2px 10px #ec5e5e;
+}
+.boards-list nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.but-tools {
+    display: none;
+    position: absolute;
+    margin-left: 190px;
+    gap: 10px;
+}
+
+.board-item:hover .but-tools {
+    display: flex;
+}
+.shield-x, .pencil{
+    fill:#000000;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.shield-x:hover, .pencil:hover{
+    fill:#ff0000;
+}

@@ -1,0 +1,145 @@
+.modal-con-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: -5px -5px 20px #a1a1a1, 5px 5px 20px #a1a1a1;
+    width: 350px;
+}
+.modal-con-list input {
+    width: 220px;
+    height: 40px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    margin: 20px 0;
+    padding-left: 15px;
+    transition: background-color 0.3s;
+}
+
+.modal-con-list input:hover,
+.modal-con-list input:focus {
+    background-color: #e6e6e6;
+}
+
+.modal-con-list input::placeholder {
+    color: #8b8b8b;
+}
+
+.render-h {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.input-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.input-button input {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 50px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    position: relative;
+}
+.input-button input:focus {
+    border-color: #007bff;
+}
+.save{
+    fill:#007bff;
+    width: 15px; 
+    height: 15px; 
+    border: none; 
+    cursor: pointer;
+    position: absolute;
+    margin-left: 195px;
+    
+}
+.save:hover {
+    fill: #013c7c;
+    width: 16px;
+    height: 16px;
+}
+
+.inactive {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.card-con {
+    background-color: #da8383;
+    border-radius: 15px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-con:hover {
+    background-color: #be5f5f;
+}
+
+.card-con p {
+    color: #fff;
+    font-size: 20px;
+}
+.trash{
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 250px;
+    width: 22px;
+    height: 22px;
+    fill: #000;
+}
+.trash:hover{
+    fill:#ff0000;
+    width: 23px;
+    height: 23px;
+}
+.del{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    fill: #000;
+}
+.del:hover{
+    fill: #ff0000;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.main-lists-con{
+    width: 300px;
+}
+.check {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    fill: #01a164;
+}
+.check:hover{
+    fill: #003817;
+}
+.input-con{
+    display: flex;
+    justify-content: center;
+}
