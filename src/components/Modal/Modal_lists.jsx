@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Droppable } from 'react-beautiful-dnd'
 import { useDispatch } from 'react-redux'
-import { updateList } from '/src/reducers/listsSlice'
+import { updateList } from '../reducers/listsSlice'
 import Cards from '../Lists/Cards'
 import '../Modal/Modal_lists.css'
 

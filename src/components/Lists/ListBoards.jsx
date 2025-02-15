@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { deleteBoard, editBoard } from '../../reducers/boardsSlice'
+import { deleteBoard, editBoard } from '../reducers/boardsSlice'
 import '../Lists/ListBoards.css'
 
 function ListBoards() {

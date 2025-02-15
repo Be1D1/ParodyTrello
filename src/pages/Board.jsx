@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import Modal_board from '../components/Modal/Modal_board'
 import ListBoards from '../components/Lists/ListBoards'
-import { addBoard, deleteBoard, editBoard } from '../reducers/boardsSlice'
+import { addBoard, deleteBoard, editBoard } from '../components/reducers/boardsSlice'
 import '/src/style/Board.css'
 
 function Board() {

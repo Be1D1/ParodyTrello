@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { DragDropContext } from 'react-beautiful-dnd'
 import { useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { addList, updateList, deleteList, sortCards } from '../reducers/listsSlice'
+import { addList, updateList, deleteList, sortCards } from '../components/reducers/listsSlice'
 import Modal_lists from '../components/Modal/Modal_lists'
 import '/src/style/BoardPage.css'
 

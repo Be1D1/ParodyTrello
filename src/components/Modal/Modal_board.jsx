@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addBoard } from '../../reducers/boardsSlice'
+import { addBoard } from '../reducers/boardsSlice'
 import '../Modal/Modal_board.css'
 
 function Modal_board({closeModal}) {

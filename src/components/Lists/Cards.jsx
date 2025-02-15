@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { Draggable } from 'react-beautiful-dnd'
 import { useDispatch } from 'react-redux'
-import { addCard, deleteCard, toggleCardStatus, editCard, sortCards } from '../../reducers/listsSlice'
+import { addCard, deleteCard, toggleCardStatus, editCard, sortCards } from '../reducers/listsSlice'
 
 function Cards({ listId, cards }) {
     const dispatch = useDispatch();
     const [newCardText, setNewCardText] = useState('')
     const [editingCardId, setEditingCardId] = useState(null)
     const [editedCardText, setEditedCardText] = useState('')
+
+    const sortedCards = [...cards].sort((a, b) => a.text.localeCompare(b.text));
 
     const handleKeyPress = (event) => {
         if (event.key === 'Enter' && newCardText.trim() !== '') {
@@ -22,7 +24,10 @@ function Cards({ listId, cards }) {
     }
 
     const handleDeleteCard = (cardId) => {
-        dispatch(deleteCard({ listId, cardId }))
+        const card = cards.find(card => card.id === cardId)
+        if (card && card.isActive) {
+            dispatch(deleteCard({ listId, cardId }))
+        }
     }
 
     const handleToggleCardStatus = (cardId) => {
@@ -30,8 +35,11 @@ function Cards({ listId, cards }) {
     }
 
     const handleEditCard = (cardId, currentText) => {
-        setEditingCardId(cardId)
-        setEditedCardText(currentText)
+        const card = cards.find(card => card.id === cardId)
+        if (card && card.isActive) {
+            setEditingCardId(cardId)
+            setEditedCardText(currentText)
+        }
     }
 
     const handleSaveCard = (cardId) => {
