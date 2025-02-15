@@ -1,5 +1,5 @@
-import React from 'react';
-import './style/Header.css';
+import React from 'react'
+import '../header/Header.css'
 function Header() {
     return (
     <header>
@@ -10,7 +10,7 @@ function Header() {
             </svg>
         </a>
     </header>
-    );
+    )
 }
 
-export default Header;
+export default Header

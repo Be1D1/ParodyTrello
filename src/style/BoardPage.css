@@ -1,9 +1,9 @@
 .board-user {
     font-size: 23px;
-    margin: 200px auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
 }
 .h2-board {
     width: 300px;
@@ -37,6 +37,7 @@
     background-color: #d4d4d4;
 }
 .modal-overlay {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,9 +75,19 @@
     fill: #f87a7a;
 }
 .modal-lists-con{
-    display: flex;
+    display: contents;
     gap: 50px;
 }
 .litst-create-con{
-    width: 300px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+}
+.glav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.basic{
+    display: flex;
 }
